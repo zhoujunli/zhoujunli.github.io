@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>这是我的第一个博客 | 粥小俊的个人博客</title>
+  <title>mac下安装emmet后无法使用快捷输入的解决方法 | 粥小俊的个人博客</title>
   
   
   <!--link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css"-->
@@ -46,12 +46,23 @@
             <div>
   <article class='ContentView'>
     <header class='PageTitle'>
-        <h1>这是我的第一个博客</h1>
+        <h1>mac下安装emmet后无法使用快捷输入的解决方法</h1>
     </header>
 
     <section>
-      <h2 id="之前一直想搭一个博客一直拖拖拖"><a href="#之前一直想搭一个博客一直拖拖拖" class="headerlink" title="之前一直想搭一个博客一直拖拖拖"></a>之前一直想搭一个博客一直拖拖拖</h2><h3 id="现在终于搭建好了"><a href="#现在终于搭建好了" class="headerlink" title="现在终于搭建好了"></a>现在终于搭建好了</h3><h3 id="感觉这个博客还可以"><a href="#感觉这个博客还可以" class="headerlink" title="感觉这个博客还可以"></a>感觉这个博客还可以</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hello</div></pre></td></tr></table></figure>
-<h3 id="以后再更换样式和主题"><a href="#以后再更换样式和主题" class="headerlink" title="以后再更换样式和主题"></a>以后再更换样式和主题</h3>
+      <h4 id="mac下安装emmet后无法使用快捷输入的原因可能是：PyV8安装失败"><a href="#mac下安装emmet后无法使用快捷输入的原因可能是：PyV8安装失败" class="headerlink" title="mac下安装emmet后无法使用快捷输入的原因可能是：PyV8安装失败"></a>mac下安装emmet后无法使用快捷输入的原因可能是：PyV8安装失败</h4><h4 id="解决方法：手动安装PyV8"><a href="#解决方法：手动安装PyV8" class="headerlink" title="解决方法：手动安装PyV8"></a>解决方法：手动安装PyV8</h4><ol>
+<li><p>在<a href="https://raw.github.com/emmetio/pyv8-binaries/master/pyv8-osx-p3.zip" target="_blank" rel="external">https://raw.github.com/emmetio/pyv8-binaries/master/pyv8-osx-p3.zip</a> 下载需要的PyV8</p>
+</li>
+<li><p>在sublimeText上进入Browse Packages<br> <img src="/assets/mac_emmet/1.png" alt=""></p>
+</li>
+<li><p>上一步操作后会跳到packages文件夹内部，返回上一层文件夹，找到跟packages同级的install packages<br> <img src="/assets/mac_emmet/2.png" alt=""></p>
+</li>
+<li><p>进入install packages文件夹内，若里面没有PyV8文件夹，则新建一个，若有，就讲刚才下载的PyV8的压缩文件解压后，放到PyV8文件夹内。<br> <img src="/assets/mac_emmet/3.png" alt=""></p>
+</li>
+<li><p>重启sublimeText，输入html:5或者！后tab键，若成功出现html代码，则说明PyV8已经安装成功。</p>
+</li>
+</ol>
+
 
       
 
@@ -64,6 +75,23 @@
               2017-07-27
             </time>
           </div>
+          
+            <div>
+              tags: 
+  <li class="meta-text">
+  { <a href="/tags/mac/">mac</a> }
+  </li>
+
+  <li class="meta-text">
+  { <a href="/tags/emmet/">emmet</a> }
+  </li>
+
+  <li class="meta-text">
+  { <a href="/tags/emmet快捷键/">emmet快捷键</a> }
+  </li>
+
+
+            </div>
           
       </section>
     
