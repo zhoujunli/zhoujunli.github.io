@@ -22,7 +22,7 @@
     <section class='menu'>
         <div>粥小俊的个人博客</div>
         
-            <div>this is one</div>
+            <div>就不告诉你</div>
         
         <ul>
           
@@ -51,12 +51,12 @@
     <header class="title">
       
         <h1>
-          <a href="/2017/07/27/这是我的第一个博客/">mac下安装emmet后无法使用快捷输入的解决方法</a>
+          <a href="/2017/06/25/mac_emmet/">mac下安装emmet后无法使用快捷输入的解决方法</a>
         </h1>
       
       <div class='ListMeta'>
-  <time datetime="2017-07-26T18:03:17.000Z" itemprop="datePublished">
-    2017-07-27
+  <time datetime="2017-06-24T18:03:17.000Z" itemprop="datePublished">
+    2017-06-25
   </time>
   
   | 
@@ -107,13 +107,23 @@
     <header class="title">
       
         <h1>
-          <a href="/2017/07/27/hello-world/">Hello World</a>
+          <a href="/2017/06/01/wetchat_program/">微信小程序的一些小笔记</a>
         </h1>
       
       <div class='ListMeta'>
-  <time datetime="2017-07-26T16:45:56.000Z" itemprop="datePublished">
-    2017-07-27
+  <time datetime="2017-05-31T18:03:17.000Z" itemprop="datePublished">
+    2017-06-01
   </time>
+  
+  | 
+  <ul>
+    
+  <li class="meta-text">
+  { <a href="/tags/微信小程序/">微信小程序</a> }
+  </li>
+
+
+  </ul>
   
   
 </div>
@@ -121,15 +131,8 @@
     </header>
     <div>
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>1.当使用”…”去平铺数据时，“…”所在的那一层，必须被遍历数据（即wx:for=”“）那一层包裹着。其中”…”后所接的单词必须与wx:for-item=””引号中的单词一致。微信小程序中默认的是“item”，但我这里把它改成“index”如下图。<br><img src="/assets/webchat_program/1.png" alt=""><br>使用“…”时，在模板中取数据时，就不必在每个那个属性名前加上默认的item，如原来遍历id，需写成，如果使用“…”的话，那么直接写成即可。</p>
+<p>2.当使用微信小程序自定义属性（data-）时，如果自定义属性的取值跟前面wx:for=”“里的data数据有关时，最好自定义属性跟wx:for=”“写在同一行。如下：<br>    <img src="/assets/webchat_program/2.png" alt=""></p>
 
       
     </div>
@@ -141,7 +144,7 @@
 
 
             <footer>
-    <div>© 2016 - John Doe </div>
+    <div>© 2016 - 粥小俊 </div>
     <div>
     Powered by Hexo
     </div>
