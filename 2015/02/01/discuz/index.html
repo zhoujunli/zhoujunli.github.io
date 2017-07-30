@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>关于discuz论坛头像显示不出来的问题 | 粥小俊</title>
+  
+  
+  <!--link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css"-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+<div class="Shell">
+    <aside class='SideBar'>
+    <section class='avatar' style="background-image: url(undefined)">
+        <div class='av-pic' style="background-image: url(/assets/avater.jpg)">
+        </div>
+    </section>
+    <section class='menu'>
+        <div>粥小俊</div>
+        
+            <div>生活可以简单，但不可以粗糙</div>
+        
+        <ul>
+          
+            <a href="/" class="Btn">
+              <li>Home</li>
+            </a>  
+          
+            <a href="/archives/" class="Btn">
+              <li>Archive</li>
+            </a>  
+          
+        </ul>
+    </section>
+    <section class="media">
+        
+    </section>
+</aside>
+
+    <div class="container">
+        <div data-pager-shell>
+            <div>
+  <article class='ContentView'>
+    <header class='PageTitle'>
+        <h1>关于discuz论坛头像显示不出来的问题</h1>
+    </header>
+
+    <section>
+      <p>关于discuz论坛头像显示不出来的问题（如下图），<br><img src="/assets/discuz/1.jpg" alt="">    </p>
+<p>且当你审查元素时，头像的路径是以localhost打头的话（又如下图)，<br><img src="/assets/discuz/2.png" alt="">        </p>
+<p>且当你在控制器将localhost修改成你的网站网址时，头像显示正常的话（再如下图）<br><img src="/assets/discuz/3.png" alt=""></p>
+<h4 id="那就要以下几点就是我们需要考虑修改的地方了"><a href="#那就要以下几点就是我们需要考虑修改的地方了" class="headerlink" title="那就要以下几点就是我们需要考虑修改的地方了"></a>那就要以下几点就是我们需要考虑修改的地方了</h4><p>1.论坛(bbs)的config文件夹中的配置文件–&gt;config_global.php，config_global_default.php，config_ucenter.php，config_ucenter_defalut.php这四个文件。<br>a.其中，config_global.php，config_global_default.php这两个配置只需将数据库名称及密码修改成跟你服务器数据库配置相同即可。</p>
+<p>b.对于config_ucenter.php，config_ucenter_defalut.php这连个配置文件除了要将数据名称及库密码修改成跟服务器数据库配置相同，config_ucenter.php需将<br><code>define(&#39;UC_API&#39;, &#39;http://localhost/www/bbs/uc_server&#39;);</code><br>修改为<br><code>define(&#39;UC_API&#39;, &#39;http://www.gou39.com/www/bbs/uc_server&#39;);</code><br><img src="/assets/discuz/4.png" alt=""></p>
+<p>而对于config_ucenter_default.php，我们则需做出如下修改：<br><img src="/assets/discuz/5.png" alt=""></p>
+<p>2.改完以上文件，千万别以为这样就改完了。还有一个很容易被忽略的文件：即是你论坛下（bbs）的uc_server\data下的config.inc.php,你还需将其中的数据库名称和改成与你服务器相同的配置。<br>做出以上修改之后，刷新页面，看看头像是否出现了。如果出现，修改就到此为止。倘若头像还出不来，那么请往下看：</p>
+<p>3.进入到你论坛的管理中心-&gt;Ucenter-&gt;应用管理-&gt;编辑，查看你当前论坛配置的应用IP是否为空，如果为空，请将你的服务器IP填上（尽管应用IP后面提示“正常情况下留空即可”，但是特殊情况特殊对待，在你做了以上两步的修改之后还无法显示头像，那就请你将IP地址填上），然后更新缓存<br><img src="/assets/discuz/6.png" alt=""></p>
+<p>4.改完IP地址之后，刷新页面，头像就出来，审查头像元素，<br>头像的src也变成了<a href="http://gou39.com了" target="_blank" rel="external">http://gou39.com了</a><br><img src="/assets/discuz/7.png" alt=""></p>
+<p>PS:在这里仅仅是将我个人遇到的discuz论坛头像无法显示的问题作了一个思路整梳理以及总结。不代表你们遇到的问题都必须照着这个来修改。个人写的总结比较少。可能会出现比较多的纰漏。</p>
+
+
+      
+
+    </section>
+    
+      <section class='ArticleMeta'>
+          <div>
+            发布于&nbsp;
+            <time datetime="2015-01-31T18:03:17.000Z" itemprop="datePublished">
+              2015-02-01
+            </time>
+          </div>
+          
+            <div>
+              tags: 
+  <li class="meta-text">
+  { <a href="/tags/discuz/">discuz</a> }
+  </li>
+
+  <li class="meta-text">
+  { <a href="/tags/论坛头像/">论坛头像</a> }
+  </li>
+
+
+            </div>
+          
+      </section>
+    
+    
+</article>
+
+  
+</div>
+
+            <footer>
+    <div>© 2016 - 粥小俊 </div>
+    <div>
+    Powered by Hexo
+    </div>
+</footer>
+
+        </div>
+    </div>
+</div>
+<script src="/js/pager/dist/singlepager.js"></script>
+<script>
+var sp = new Pager('data-pager-shell')
+
+</script>
+</body>
+</html>
